@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="517c0862-8419-4e55-9cac-537231baa4ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/composite/product/ProductAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/composite/product/ProductCompositeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/composite/product/RecommendationSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/composite/product/ReviewSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/composite/product/ServiceAddresses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/core/product/ProduceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/core/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/core/recommendation/Recommendation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/core/recommendation/RecommendationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/core/review/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/core/review/ReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/exceptions/InvalidInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/api/src/main/java/se/magnus/api/exceptions/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/src/main/java/se/magnus/microservices/core/product/services/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/src/test/java/se/magnus/microservices/core/product/ProductServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/util/src/main/java/se/magnus/util/http/GlobalControllerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/util/src/main/java/se/magnus/util/http/HttpErrorInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap_03_third/util/src/main/java/se/magnus/util/http/ServiceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03/api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03/api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03/util/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03/util/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03/util/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03/util/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/api/src/test/java/se/magnus/api/ApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/util/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/util/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/util/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/util/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/util/src/main/java/se/magnus/util/http/UtilApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap_03_third/microservices/product-service/src/main/java/se/magnus/microservices/core/product/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap_03_third/util/src/test/java/se/magnus/util/http/UtilApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="21fug8nmiDq2dFFKvgEXNz3CWMT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="517c0862-8419-4e55-9cac-537231baa4ce" name="Changes" comment="" />
+      <created>1638344573459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638344573459</updated>
+      <workItem from="1638344574489" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

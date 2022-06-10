@@ -1,0 +1,6 @@
+rootProject.name = 'product-service'
+include ':api'
+include ':util'
+project(':api').projectDir = new File(settingsDir, '../../api')
+project(':util').projectDir = new File(settingsDir, '../../util')
+
