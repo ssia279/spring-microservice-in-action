@@ -1,10 +1,13 @@
 package com.optimagrowth.license.controllers;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 import com.optimagrowth.license.models.License;
 import com.optimagrowth.license.services.LicenseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Locale;
 
 @RestController
 @RequestMapping(value = "v1/organization/{organizationId}/license")
@@ -20,6 +23,15 @@ public class LicenseController {
   ) {
 
     License license = this.licenseService.getLicense(licenseId, organizationId);
+    license.add(linkTo(methodOn(LicenseController.class)
+        .getLicense(organizationId, license.getLicenseId()))
+        .withSelfRel(),
+        linkTo(methodOn(LicenseController.class).createLicense(organizationId, license, null))
+            .withRel("createLicense"),
+    linkTo(methodOn(LicenseController.class).updateLicense(organizationId, license))
+        .withRel("updateLicense"),
+    linkTo(methodOn(LicenseController.class).deleteLicense(organizationId, license.getLicenseId()))
+        .withRel("deleteLicense"));
 
     return ResponseEntity.ok(license);
   }
@@ -34,11 +46,12 @@ public class LicenseController {
 
   @PostMapping
   public ResponseEntity<String> createLicense(
-    @PathVariable("organizationId") String organizationId,
-    @RequestBody License license)
+      @PathVariable("organizationId") String organizationId,
+      @RequestBody License license,
+      @RequestHeader(value = "Accept-Language", required = false)Locale locale)
   {
 
-    return ResponseEntity.ok(this.licenseService.createLicense(license, organizationId));
+    return ResponseEntity.ok(this.licenseService.createLicense(license, organizationId, locale));
   }
 
   @DeleteMapping(value = "/{licenseId}")
