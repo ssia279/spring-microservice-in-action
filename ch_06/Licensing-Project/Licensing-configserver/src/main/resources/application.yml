@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active:
+      - native
+
+  cloud:
+    server:
+      native:
+        search-locations: classpath:/config # indicate the config files will be located at the resources/config folder
+
+
+server:
+  port: 8071
