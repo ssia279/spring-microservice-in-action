@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: organization-service
+  profiles:
+    active: dev
+  config:
+    import: configserver:http://configserver:8071
+
+
+  main:
+    allow-circular-references: true
